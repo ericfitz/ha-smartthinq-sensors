@@ -1,5 +1,9 @@
 """Constants for LGE ThinQ custom component."""
 
+# needed for fix for issue #873
+from datetime import timedelta
+from homeassistant.components.climate.const import HVACMode
+
 __version__ = "0.41.1"
 PROJECT_URL = "https://github.com/ollo69/ha-smartthinq-sensors/"
 ISSUE_URL = f"{PROJECT_URL}issues"
@@ -9,6 +13,10 @@ DOMAIN = "smartthinq_sensors"
 MIN_HA_MAJ_VER = 2025
 MIN_HA_MIN_VER = 1
 __min_ha_version__ = f"{MIN_HA_MAJ_VER}.{MIN_HA_MIN_VER}.0"
+
+# fix for issue #873
+CLIMATE_SUPPORTED_MODES = [HVACMode.HEAT, HVACMode.OFF]
+UPDATE_INTERVAL = timedelta(seconds=30)
 
 # general sensor attributes
 ATTR_CURRENT_COURSE = "current_course"

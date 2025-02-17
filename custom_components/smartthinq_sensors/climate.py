@@ -22,6 +22,9 @@ from homeassistant.components.climate.const import (
     PRESET_NONE,
     ClimateEntityFeature,
     HVACMode,
+    DOMAIN,
+    HVACMode,
+    SUPPORT_TARGET_TEMPERATURE,
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import ATTR_TEMPERATURE, UnitOfTemperature

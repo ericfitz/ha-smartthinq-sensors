@@ -23,6 +23,7 @@ from homeassistant.const import (
     EntityCategory,
     UnitOfPower,
     UnitOfTime,
+    UnitOfTemperature,
 )
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers import config_validation as cv
